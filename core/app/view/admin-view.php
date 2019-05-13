@@ -85,6 +85,7 @@
 
 			$sql_user = new Estatus();
 			$query_user = $sql_user->getInfoUser();
+			$count = 1;
 						$users = '<div class = "modal_header_admin">';
 							$users .= '<h5>Usuarios</h5>';
 							$users .= '<h5>Hoteles</h5>';
@@ -114,9 +115,10 @@
 									$users .= '<h5>'.$data_user->user.'</h5>';
 									$users .= '<span class = "close" id = "close">&times;</span>';
 								$users .= '</div>';
-								$users .= '<form class="grid_center" method = "post" action="./?action=" >';
-									$users .= '<input type="hidden" name="id-user" value="'.$data_user->id.'">';
-									$users .= '<label for="logo">Cambiar logo</label>';
+								$users .= '<form class="grid_center" method = "post" action="./?action=./?action=act_user" >';
+									$users .= '<div><img src="'.$data_user->logo.'" style = "width:70px; height:60px;"></div>';
+									$users .= '<label for="logo'.$count.'">Cambiar logo</label>';
+									$users .= '<input type="hidden" id="logo'.$count.'" name="id-user" value="'.$data_user->id.'">';	
 									$users .= '<input type="file" style="display:none;" name="logo" id="logo">';
 									$users .= '<input type="text" name="empresa-edit" value="'.$data_user->nombre_e.'">';
 									$users .= '<input type="text" name="email-edit" value="'.$data_user->email.'">';
@@ -131,9 +133,10 @@
 										$users .= '<div><input type="radio" name="estatus-edit" value="1" checked>Habilitar</div>';
 										$users .= '<div><input type="radio" name="estatus-edit" value="0">Deshabilitar</div>';
 									}
-									$users .= '<button type="submit" class="dropbtn">Actualizar</button>';
+									$users .= '<button type="submit" class="dropbtn" value="actualizar">Actualizar</button>';
 								$users .= '</form>';
 							$users .= '</div>';
+							$count++;
 						}
 					$users .= '</div>';
 				$users .= '</div>';
