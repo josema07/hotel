@@ -1,0 +1,30 @@
+#register{
+	width:70%;
+	box-shadow:#f5f5f5 5px 5px 10px;
+	min-height:800px;
+	background-color:white;
+}
+
+body{
+	background-color:#E8E8E8;
+}
+
+
+input{
+	width:50%;
+}
+
+#form_style{
+	width:50%;
+}
+
+@media screen and (max-width:640px) {
+  #register{
+  	width:100%;
+  }
+  #form_style{
+	width:100%;
+}
+
+
+}
