@@ -27,7 +27,7 @@ function mostrarEstado(estadoSelecionado){
         resultado.innerHTML = this.responseText;
       }
     }
-    xmlhttp.open("GET","core/app/./?action=getlista?estado="+estadoSelecionado,true);
+    xmlhttp.open("GET","../action/getlista-action?estado="+estadoSelecionado,true);
     xmlhttp.send();
   }
 }

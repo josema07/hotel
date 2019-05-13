@@ -19,7 +19,7 @@
             <div class="col-md-12">
                <navegador class="navegadorbar navegadorbar-dark navegadorbar-expand-lg">
                   <a class="navegadorbar-brand" href="./?view=index"><img src="static/images/logo.png" class="img-fluid" alt="logo" width="100px"></a> 
-                  <button class="navegadorbar-toggler" type="button" data-toggle="collapse" data-target="#navegadorbar" aria-controls="navegadorbar" aria-expanded="false" aria-label="Toggle navegadorigation"> 
+                  <button class="navegadorbar-toggler" type="button" data-toggle="collapse" data-target="#navegadorbar" aria-controls="navegadorbar" aria-expanded="false" aria-label="Toggle navegadorigation" style="background-color: #093999;"> 
                      <span class="navegadorbar-toggler-icon"></span> 
                   </button>
                   <div class="collapse navegadorbar-collapse" id="navegadorbar">
@@ -29,7 +29,7 @@
                         <li class="navegador-item"> <a class="navegador-link" href="./?view=associates">ASOCIADOS</a> </li>
                         <li class="navegador-item"> <a class="navegador-link" href="./?view=service">SERVICIOS</a> </li>
                         <li class="navegador-item"> <a class="navegador-link" href="./?view=notice">NOTICIAS</a> </li>
-
+                        <li class="navegador-item">
                         <?php 
                            if (isset($_SESSION["client_id"])) {
                               if($_SESSION['rol'] == "admin"){
@@ -56,14 +56,22 @@
                               }          
                            }else{
                               echo 
-                              '<li class="navegador-item"> <a class="navegador-link" href="./?view=login"><i class="fas fa-user"></i>  INGRESAR</a> </li>';
+                              '<li class="navegador-item"> <a class="navegador-link" href="./?view=login"><i class="fas fa-user"></i>  INGRESAR</a> </li>
+                              <li class="navegador-item"> <a class="navegador-link" href="./?view=register">  AFILIARSE</a> </li>';
                            } 
-                        ?>  
-                     </ul>        
-
-                        <a class="navegadorbar-brand" href="#"><img src="static/images/usa.png" class="img-fluid" alt="usa" width="30px"></a> <button class="navegadorbar-toggler" type="button" data-toggle="collapse" data-target="#navegadorbar" aria-controls="navegadorbar" aria-expanded="false" aria-label="Toggle navegadorigation"> <span class="navegadorbar-toggler-icon"></span> </button>
-
-                        <a class="navegadorbar-brand" href="#"><img src="static/images/spain.png" class="img-fluid" alt="spain" width="30px"></a> <button class="navegadorbar-toggler" type="button" data-toggle="collapse" data-target="#navegadorbar" aria-controls="navegadorbar" aria-expanded="false" aria-label="Toggle navegadorigation"> <span class="navegadorbar-toggler-icon"></span> </button>
+                        ?>
+                        </li>  
+                             
+                        <li class="navegador-item">
+                          <div class="dropdown">
+                            <button class="dropbtn">Idioma</button>
+                            <div class="dropdown-content">
+                              <a href="#"><img src="static/images/spain.png" width="15px"> Español</a>
+                              <a href="#"><img src="static/images/usa.png" width="15px"> Ingles</a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                   </div>
                </navegador>
             </div>
@@ -107,42 +115,42 @@
     <div class="marcas">
 
         <div class="marca"> 
-            <img src="static/images/marriot.jpg" alt="marriot" width="100px">
+            <img src="static/logo/marriot.jpg" alt="marriot" width="100px">
 
         </div>
 
         <div class="marca">
 
-            <img src="static/images/pestana.png" alt="pestana" width="100px">
+            <img src="static/logo/pestana.png" alt="pestana" width="100px">
 
         </div>
 
         <div class="marca">
 
-            <img src="static/images/eurobuilding.png" alt="euro" width="100px">
+            <img src="static/logo/eurobuilding.png" alt="euro" width="100px">
         </div>
 
         <div class="marca">
              
-            <img src="static/images/cayena.png" alt="cayena" width="100px">
+            <img src="static/logo/cayena.png" alt="cayena" width="100px">
         </div>
 
         <div class="marca">
 
-            <img src="static/images/tamanaco.jpeg" alt="tamanaco" width="100px">
+            <img src="static/logo/tamanaco.jpeg" alt="tamanaco" width="100px">
         </div>
 
         <div class="marca">
 
-            <img src="static/images/renaiss.png" alt="renaiss" width="100px">
-        </div>
-        <div class="marca">
-             
-            <img src="static/images/altamira.png" alt="altamira" width="100px">
+            <img src="static/logo/renaiss.png" alt="renaiss" width="100px">
         </div>
         <div class="marca">
              
-            <img src="static/images/cct.jpg" alt="cct" width="100px">
+            <img src="static/logo/altamira.png" alt="altamira" width="100px">
+        </div>
+        <div class="marca">
+             
+            <img src="static/logo/cct.jpg" alt="cct" width="100px">
         </div>
 
     </div>
@@ -186,7 +194,7 @@
             </div>
 
             <div class="lista" id="lista">
-              
+
             </div>
 
             <br>

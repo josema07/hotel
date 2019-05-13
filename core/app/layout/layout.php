@@ -9,14 +9,14 @@
     <!-- Themify Icons -->
     <link rel="stylesheet" href="core/css/themify-icons.css">
     <!-- PRINCIPAL CSS -->
-    <link rel="stylesheet" href="core/css/estiloavecintels.css">
+    <link rel="stylesheet" href="core/css/estiloavecintel.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 
 </head>
-<body >
+<body onresize="modal()">
   
  <section>
 
@@ -104,6 +104,7 @@
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7.1.0/dist/promise.min.js"></script>
 
     <script src="core/js/main.js"></script>
+    <script src="core/js/navbar.js"></script>
     <script src="core/js/modal.js"></script>
 
 

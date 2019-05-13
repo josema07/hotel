@@ -10,33 +10,12 @@
 	</script>
 	<link rel="stylesheet" type="text/css" href="core/css/register.css">
 
-<section>
-	    <div class="container">
-	      <div class="navbarDesk">
-	        <div class="img">
-	          <img src="static/images/logo.png" alt="">
-	        </div>
-	        <div class="option">
+<?php 
 
-	          <a href="./?view=index">Inicio</a>
-	          <a href="./?view=associates">Asociados</a>
-	          <a href="./?view=service">Servicios</a>
-	          <a href="./?view=notice">Noticias</a>
-	          <a href="">Ranking</a>
-	         <a href="./?view=login">Ingresar</a>
-				<a href="./?view=register">Afiliarse</a>	          
-	          <div class="dropdown">
-				  <button class="dropbtn">Idioma</button>
-				  <div class="dropdown-content">
-				  <a href="#"><img src="static/images/spain.png" width="15px"> Español</a>
-				  <a href="#"><img src="static/images/usa.png" width="15px"> Ingles</a>
-				 </div>
-				</div>
-	        </div>
-	      </div>
-	    </div>
-	  </section>
-	<br><br>
+	include 'core/app/navbar.php';
+
+ ?>
+ <br><br>
 	<center>
 
 	<section id='register'> 
@@ -311,7 +290,7 @@
 	</select>
 	<br>
 	<b>Datos del Asistente</b>
-
+	<br>
 	<input type="text" name="nombre_assis" class="form-control" placeholder="Nombre y Apellidos" id='form_style' required>
 	<br>
 	<input type="text" name="telefono_assis" class="form-control" placeholder="Teléfono" id='form_style' required>
@@ -337,12 +316,12 @@
 	<input type="text" name="user" class="form-control" placeholder="Usuario" id='form_style' required>
 	<br>
 	<input type="email" name="email" class="form-control" placeholder="Correo" id='form_style' required>
-	<br>
+	
 	<input type="password" name="clave" class="form-control" placeholder="Contraseña" id='form_style' required>
-	<br>
+	
 	<input type="password" name="clave2" class="form-control" placeholder="Repetir Contraseña" id='form_style' required>
 	<br>
-	<button class='btn btn-primary'>Registrarse</button>
+	<button class='dropbtn'>Registrarse</button>
 	<br>
 	<br>
 	</form>

@@ -8,7 +8,7 @@
 		public static $tablename = "slider";
 
 		public function insertImg($idHotel, $imagen){
-			$sql = "INSERT INTO " .self::$tablename. " ('id_hotel', 'url') VALUES ('$idHotel', '$imagen')";
+			$sql = "INSERT INTO " .self::$tablename. " (id_hotel, url) VALUES ('$idHotel', '$imagen')";
 			echo $sql;
 			Executor::doit($sql);
 		}
