@@ -1,5 +1,5 @@
 <section>
-	    <div class="container">
+	    <!-- <div class="container"> -->
 	      <div class="navbarDesk">
 	        <div class="img">
 	          <a href="./?view=index"><img src="static/images/logo.png" alt=""></a>
@@ -37,19 +37,15 @@
                               }          
                            }else{
                               echo 
-                              '<a href="./?view=login">Ingresar</a>
-	          						<a href="./?view=register">Afiliarse</a>';
+	          						'<a href="./?view=register">Afiliarse</a>
+                              <a href="./?view=login">Ingresar</a>';
                            } 
                         ?>
-	          
-	          <div class="dropdown">
-				  <button class="dropbtn">Idioma</button>
-				  <div class="dropdown-content">
-				  <a href="#"><img src="static/images/spain.png" width="15px"> Español</a>
-				  <a href="#"><img src="static/images/usa.png" width="15px"> Ingles</a>
-				 </div>
-				</div>
-	        </div>
+	          	<div>
+					  <a href="#"><img src="static/images/spain.png" width="15px"></a>
+					  <a href="#"><img src="static/images/usa.png" width="15px"></a>
+	        		</div>
+	        	</div>
   	        	<div class="cellphone">
                
 	            <i class="fas fa-bars"></i>
@@ -94,5 +90,5 @@
                ?>
 				</div>
 	      </div>
-	    </div>
+	    <!-- </div> -->
 	  </section>

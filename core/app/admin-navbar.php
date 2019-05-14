@@ -1,5 +1,5 @@
 <section>
-	    <div class="container">
+
 	      <div class="navbarDesk">
 	        <div class="img">
 	          <a href="./?view=index"><img src="static/images/logo.png" alt=""></a>
@@ -38,14 +38,9 @@
 	          						<a href="register-view.php">Afiliarse</a>';
                            } 
                         ?>
-	          
-	          <div class="dropdown">
-				  <button class="dropbtn">Idioma</button>
-				  <div class="dropdown-content">
-				  <a href="#"><img src="static/images/spain.png" width="15px"> Español</a>
-				  <a href="#"><img src="static/images/usa.png" width="15px"> Ingles</a>
-				 </div>
-				</div>
+
+				  <a href="#"><img src="static/images/spain.png" width="25px"></a>
+				  <a href="#"><img src="static/images/usa.png" width="25px"></a>
 	        </div>
 	        	<div class="cellphone">
 	            <i class="fas fa-bars"></i>
@@ -59,6 +54,5 @@
 			  		<a href="#"><img src="static/images/usa.png" width="15px"> Ingles</a>
 				</div>
 	        </div>
-	      </div>
 	  </section>
 	<br><br>	

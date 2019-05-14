@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    color: white;
+    color: #808080;
 }
 
 a:hover,
@@ -174,7 +174,7 @@ p.lead {
   height: 108px;
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(12,1fr);
+  grid-template-columns: repeat(11,1fr);
   box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
 }
 .navbarDesk .img{
@@ -195,17 +195,30 @@ p.lead {
   grid-column-gap: 12px;
 }
 .navbarDesk .option a{
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
   text-align: center;
   color: #093188;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px;
   transition: all .3s ease-in-out;
 }
 .navbarDesk .option a:hover{
-  background-color: #093188;
-  color: white;
+  /*background-color: white;*/
+  padding: 10px;
+  color: grey;
+  transition: all .5s ease-in-out;
+  animation-name: borderB;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes borderB{
+  from{
+    border-bottom: 1px solid #093188;
+  }
+  to{
+    border-bottom: 1px solid #093188; 
+  }
 }
 .navbarDesk .cellphone{
   display: none;
@@ -251,6 +264,7 @@ background-color: white;
   color: white;
   padding: 10px;
   font-size: 16px;
+  text-decoration: none;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -352,6 +366,10 @@ background-color: white;
 
 .navegador-menu.is-scrolling {
     padding: 0;
+}
+
+.navegador-a-index{
+  color: white;
 }
 
 .navegadorbar-navegador .navegador-link {
@@ -1322,6 +1340,19 @@ body h2{
   border-radius: 16px;
 }
 
+/* PESTA;A DE USUARIOS */
+
+.abrir{
+  background-color: #093188;
+  width: 25%;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 3px;
+}
 
 .center-elements{
   display: grid;

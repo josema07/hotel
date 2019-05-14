@@ -24,12 +24,12 @@ input{
 	margin-bottom: 10px;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:980px) {
   #register{
-  	width:100%;
+  	width:80%;
   }
   #form_style{
-	width:100%;
+	width:70%;
 }
 
 

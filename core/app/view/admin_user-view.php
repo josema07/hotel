@@ -34,7 +34,7 @@
 								}else{
 									$users .= '<p>Activo</p>';
 								}
-								$users .= '<button type="submit" id = "abrir" class="dropbtn abrir"><span><i class="fas fa-edit"></i></span></button>';
+								$users .= '<button type="submit" id = "abrir" class="abrir"><span><i class="fas fa-edit"></i></span></button>';
 							$users .= '</div>';
 						$users .= '</form>';
 						}

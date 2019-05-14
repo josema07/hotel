@@ -13,7 +13,7 @@
 
 </script>
 
-   <div class="navegador-menu fixed-top">
+   <div class="navegador-menu fixed-top" style="background-color:#15131399;">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -63,13 +63,8 @@
                         </li>  
                              
                         <li class="navegador-item">
-                          <div class="dropdown">
-                            <button class="dropbtn">Idioma</button>
-                            <div class="dropdown-content">
-                              <a href="#"><img src="static/images/spain.png" width="15px"> Español</a>
-                              <a href="#"><img src="static/images/usa.png" width="15px"> Ingles</a>
-                            </div>
-                          </div>
+                              <a href="#"><img src="static/images/spain.png" width="25px"></a>
+                              <a href="#"><img src="static/images/usa.png" width="25px"></a>
                         </li>
                       </ul>
                   </div>
